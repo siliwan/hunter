@@ -1,0 +1,19 @@
+#+HTML: <div align="center">
+* Project Orion: Hunter
+#+HTML: <img alt="GitHub" src="https://img.shields.io/github/license/EngineOrion/container">
+#+HTML: </div>
+
+* Introduction
+This repository contains the router. It is responsible to communicate
+with the other programs. It is the central part of one server.
+
+* Compile it
+#+begin_src sh
+cargo build --release
+./target/release/hunter --socket=true
+#+end_src
+
+And then it can be started. It can report redimentary informations
+about the config with the switch =--socket=false= followed with the name
+of the requested data. The full functionality can be started with the
+switch =--socket=true=.
