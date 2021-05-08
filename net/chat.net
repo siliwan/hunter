@@ -1,0 +1,3 @@
+exec chat
+message = json.net.decode
+load auth.net
