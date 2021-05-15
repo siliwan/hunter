@@ -2,8 +2,8 @@ use std::io::Result;
 use std::os::unix::net::UnixListener;
 
 /// If a socket is requested, it will start one and interact over it.
-pub fn start_socket() -> Result<()> {
-    let listener = UnixListener::bind("/etc/orion/socket.sock")?;
+pub fn start_socket() {
+    let listener = UnixListener::bind("/etc/orion/socket.sock").unwrap();
 
     for stream in listener.incoming() {
         match stream {
@@ -14,6 +14,4 @@ pub fn start_socket() -> Result<()> {
             }
         }
     }
-
-    Ok(())
 }

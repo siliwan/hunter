@@ -1,9 +1,0 @@
-{
-    "0000": {
-	"sources": [
-	    "shadow",
-	    "websocket.or"
-	],
-	"entryPoint": "chat.net"
-    }
-}
